@@ -65,7 +65,7 @@ class pyhtmlcv(object):
 		currentTime = now.strftime("%Y-%m-%d %H:%M:%S %z")
 
 		# Render the template into HTML
-		html = template.render(name=config["name"}, contact=config["contact"], sections=config["sections"], now=currentTime)
+		html = template.render(name=config["name"], contact=config["contact"], sections=config["sections"], now=currentTime)
 
 		# Figure out the filename we'll be using for the result
 		filename = now.strftime("%Y-%m-%d_%H%M%S") + ".html"
