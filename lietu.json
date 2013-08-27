@@ -199,7 +199,7 @@
         {
             "title":"Other project links",
             "fields":[
-                ["Code released on homepage", "<a href=\"http://lietu.net/index.php/releases/\">http://lietu.net/index.php/releases</a>"],
+                ["Code released on homepage", "<a href=\"http://lietu.net/blog.html\">http://lietu.net/blog.html</a>"],
                 ["GitHub repositories", "<a href=\"https://github.com/lietu?tab=repositories\">https://github.com/lietu</a>"],
                 ["Google Code profile", "<a href=\"http://code.google.com/u/115444436386238448327/\">http://code.google.com/u/115444436386238448327/</a>"],
                 ["SourceForge profile", "<a href=\"http://sourceforge.net/users/lietu\">http://sourceforge.net/users/lietu</a>"]
