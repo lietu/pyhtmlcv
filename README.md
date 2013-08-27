@@ -22,5 +22,7 @@ Suggested use
  * Confirm that the result is good. Pasting certain special characters from Word, for example, can cause issues in the output. Also, Google Chrome will refuse to work with the client-side LESS parser if you are trying to access the HTML file over file:// protocol, some other browsers might also.
  * Install Node.js and the LESS compiler (npm package is called less), and run "lessc templates/style.less style.css", copy the style.css with your HTML CV
  * Remove the script -tag for the LESS parser from the HTML CV, and change the link tag to <link rel="stylesheet" type="text/css" href="style.css">
- * Rename generated .html file to "cv.html", and publish cv.html and style.css on the web
- 
+ * Rename generated .html file to "cv.html", and publish generated/yourname
+ .json/* on
+ the web
+

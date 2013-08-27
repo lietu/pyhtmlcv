@@ -1,212 +1,210 @@
 {
-	"name": "Janne Enberg",
-	"contact": "+358 (0) 440 851 855 | janne.enberg@lietu.net | http://lietu.net/",
+    "name":"Janne Enberg",
+    "contact":"<a href='tel:+358440851855'>+358 (0) 440 851 855</a> <a href='mailto:janne.enberg@lietu.net'>janne.enberg@lietu.net</a> <a href='http://lietu.net'>http://lietu.net/</a>",
+    "mainHeading":"General",
 
-	"sections": [
+    "sections":[
 
-		{
-			"title": "Personal Information",
-			"fields": [
-				["Name", "Janne Enberg"],
-				["Date of Birth", "31<sup>st</sup> of January, 1985"],
-				["Languages", "Finnish (mother tongue), English (fluent in conversation and writing, including IT terminology)"],
-				["Hobbies", "Hydroponics, cosmology, theoretical physics, Arduinos, network security, operating systems, hardware diagnostics, server administration and programming"]
-			]
-		},
+        {
+            "title":"Personal Information",
+            "fields":[
+                ["Name", "Janne Enberg"],
+                ["Date of Birth", "31<sup>st</sup> of January, 1985"],
+                ["Languages", "Finnish (mother tongue), English (fluent in conversation and writing, including IT terminology)"],
+                ["Hobbies", "Hydroponics, cosmology, theoretical physics, Arduinos, network security, operating systems, hardware diagnostics, server administration and programming"]
+            ]
+        },
 
-		{
-			"title": "Summary",
-			"large": [
-				"Autodidact with experience of working in all fields of software development, including design, development, optimization, debugging, documentation, testing, maintenance, and customer support.",
-				"Long history in *nix server set up and administration for various purposes.",
-				"Reliable professional, open for innovation, able to handle stressful projects with deadlines and ad-hoc situations.",
-				"Started doing everything related to computers at a young age, having used 20+ programming/scripting languages and 10+ operating systems, NOT including all variants and different distributions."
-]
-		},
+        {
+            "title":"Summary",
+            "largeList":[
+                "Autodidact with experience of working in all fields of software development, including design, development, optimization, debugging, documentation, testing, maintenance, and customer support.",
+                "Long history in *nix server set up and administration for various purposes.",
+                "Reliable professional, open for innovation, able to handle stressful projects with deadlines and ad-hoc situations.",
+                "Started doing everything related to computers at a young age, having used 20+ programming/scripting languages and 10+ operating systems, NOT including all variants and different distributions."
+            ]
+        },
 
-		{
-			"title": "Experience Summary",
-			"large": [
-				"Work experience mainly in LAMP technologies (Linux, Apache, MySQL, and PHP) on CentOS servers.",
-				"Solid knowledge in database structure design gained through experience in making database intensive software and lectures by MySQL consultants. This includes debugging performance issues, optimization through means such as proper use of indexes, keeping of historical data for logging purposes, and tuning MySQL configuration.",
-				"Great experience in optimization of web-based software used world-wide, with up to 800 000 visits per day. This includes use of caching technologies (such as Memcached), caching servers (Varnish), and optimizations of multiple different layers.",
-				"Experienced in agile software development methodologies, including Scrum."
-			]
-		},
+        {
+            "title":"Experience Summary",
+            "largeList":[
+                "Work experience mainly in LAMP technologies (Linux, Apache, MySQL, and PHP) on CentOS and Ubuntu servers.",
+                "Solid knowledge in database structure design gained through experience in making database intensive software and lectures by MySQL consultants. Debugging performance issues, optimization through means such as proper use of indexes and using temporary tables, keeping of historical data for logging purposes, and tuning MySQL configuration.",
+                "Great experience in optimization of web-based software used world-wide, with up to 800 000 visits per day. This includes use of caching technologies (such as Memcached), caching servers (Varnish), and optimizations of multiple different layers.",
+                "Experienced in agile software development methodologies, including Scrum."
+            ]
+        },
 
-		{
-			"title": "Areas of specialization",
-			"large": [
-				"Worked for Oy Nord Software Ltd. as a software engineer from August 2007 until  February 2009, and as a senior software engineer since March 2009.",
-				"Responsibilities have also included most server administration tasks for the company's and clients' servers, including configuration choosing for most projects' servers."
-			]
-		},
+        {
+            "title":"Areas of specialization",
+            "largeList":[
+                "Worked for Oy Nord Software Ltd. as a software engineer from August 2007 until February 2009, and as a senior software engineer since March 2009 until March 2013.",
+                "Responsibilities also included most server administration tasks for the company's and clients' servers, including configuration choosing for most projects' servers.",
+                "Since March 2013 working for Kiosked Oy Ab as a senior software engineer."
+            ]
+        },
 
-		{
-			"title": "Technical skills",
-			"fields": [
-				["Programming languages", "ActionScript 3, Bash Shell, C, C++ (OOP), JavaScript (async + OOP), Node.js, PHP (OOP), currently learning Python"],
-				["Other languages", "HTML 4.0 - XHTML 1.1, CSS, SQL"],
-				["Operating systems", "Windows 3.0 - 7, Linux, FreeBSD, OpenBSD"],
-				["Hardware", "System assembly, troubleshooting, configuration choosing"]
-			]
-		},
-
-
-		"-",
-
-
-		"Project Portfolio",
-
-		{
-			"title": "Case W",
-			"duration": "July 2011 - present",
-			"fields": [
-				["Environment", "LAMP environment, LDAP"],
-				["Technologies", "Bash Shell, JavaScript, MySQL, PHP, LDAP, Bootstrap, Yii"],
-				["Role", "Senior software engineer, database and software architecture designer, core component developer"],
-				["Team Size", "2"]
-			],
-			"large": "<p>Case W is a work shift planning and scheduling system with LDAP integration. The application can be used to first plan requirements for staffing in different teams at different times, and those requirements can easily be used to plan each employee's weekly schedules. Employees can also use the application to request vacation, track their vacation day usage, notify the team managers about sick leave, and request to switch shifts with other employees.</p><p>The software scales well from the needs of a small team to the needs of a company with hundreds of employees. The system is also highly customizable and features a custom-built JavaScript application structure and several larger JavaScript-driven UI components used for planning the weekly and daily schedules.</p>"
-		},
-
-		{
-			"title": "Case L",
-			"duration": "July 2012 - October 2012",
-			"fields": [
-				["Environment", "LAMP environment"],
-				["Technologies", "JavaScript, MySQL, PHP, Bootstrap, Yii"],
-				["Role", "Team lead, database and software architecture designer, project manager"],
-				["Team Size", "2"],
-				["Responsibilities", "Development, database design, software and server optimization, core components, payment systems, customer contact"]
-			],
-			"large": "<p>Case L was an online e-commerce site, that was given a full frontend rewrite, while only doing some improvements on the already existing backend software. The frontend was given a much more modern responsive layout, with several interactive JavaScript components, while trying to keep a familiar and comfortable feel to the site for the existing customers.</p><p>An easy to integrate and extensible payment system module was done for the project, so future projects can benefit from it as well.</p>"
-		},
-
-		{
-			"title": "Case D",
-			"duration": "October 2011 - October 2012",
-			"fields": [
-				["Environment", "LAMP environment"],
-				["Technologies", "C++, Bash Shell"]
-			],
-			"large": "<p>Case D was a multi-threaded C++ application created to handle time-critical actions on a high-traffic site that needs to deliver real-time data to all of their clients. The application was built from scratch, fully customized to the needs of the client, with focus on stability, performance, scalability and readability of the code. The application is capable of automatically recovering even from many severe errors without affecting the site, it is easy to debug and profile, and scales easily by sharding and includes a simple high availability implementation.</p><p>Case D was handled as a one-man project, for both customer contact and technical implementation.</p>"
-		},
+        {
+            "title":"Technical skills",
+            "fields":[
+                ["Programming languages", "Bash Shell, C++ (OOP), JavaScript (async + OOP), Node.js, PHP (OOP), Python, Lua and more"],
+                ["Other languages", "HTML, CSS, LESS, SQL"],
+                ["Operating systems", "Windows 3.0 - 7, Linux (CentOS, Debian, many more), FreeBSD, OpenBSD"],
+                ["Hardware", "System assembly, troubleshooting, configuration choosing"],
+                ["Other", "MySQL, Nginx, Amazon Web Services (EC2, VPC, RDS, ...)"]
+            ]
+        },
 
 
 
-
-		"-",
-
+        "-",
 
 
 
-		{
-			"title": "Case E2",
-			"duration": "September 2011 - November 2011",
-			"fields": [
-				["Environment", "LAMP environment"],
-				["Technologies", "Bash Shell, JavaScript, MySQL, PHP, Bootstrap, Yii, SOAP"]
-			],
-			"large": "<p>Case E2 was an integration project of a third party system to Salesforce. The integration was implemented as a completely separate application that connected to the third party system's database, converted the information in it to a more appropriate format and communicated the data to Salesforce. A web-UI was created for managing it as well as command-line tools for automating the process.</p><p>Case E2 was handled as a one-man project, for both customer contact and technical implementation.</p>"
-		},
+        "Project Portfolio",
 
-		{
-			"title": "Case B",
-			"duration": "April 2009 - December 2011",
-			"fields": [
-				["Environment", "Large LAMP environment, Memcached, MongoDB, Varnish, nginx"],
-				["Technologies", "Bash Shell, C++, JavaScript, MySQL, PHP"],
-				["Role", "Team lead, senior software engineer, database and software architecture designer"],
-				["Team Size", "Has varied between 2 and 9"],
-				["Responsibilities", "Development, database design, software and server optimization, and security auditing "]
-			],
-			"large": "<p>Case B was creating a world-wide high profile internet based site, with real-time data and payment system integrations from scratch. The servers, software and database were heavily optimized to serve a large amount of clicks per day, while still keeping the data real-time. Several different payment systems were integrated, and several security systems were created to ensure transaction integrity. The database was also been designed to keep the system robust, while making sure that all data was preserved.</p><p>Case B served up to 800 000 visitors and a few million page views per day.</p>"
-		},
+        {
+            "title":"Case DI",
+            "duration":"December 2012 - March 2013",
+            "fields":[
+                ["Environment", "LAMP environment, SOAP"],
+                ["Technologies", "Bash Shell, JavaScript, MySQL, PHP, Bootstrap, Drupal"],
+                ["Role", "Senior software engineer, database and software architecture designer, integrations"],
+                ["Team Size", "5"]
+            ],
+            "large":"<p>Case DI is an employee portal for highly qualified professionals. The portal included SOAP integration with an application for keeping information of available jobs and applying for them, as well as creating a SOAP authentication API for communication with another application.</p>"
+        },
 
-		{
-			"title": "Case M",
-			"duration": "November 2008 - September 2009",
-			"fields": [
-				["Environment", "Large LAMP environment, Memcached, MongoDB, Varnish, nginx"],
-				["Technologies", "JavaScript, MySQL, pdflib, PHP"],
-				["Role", "Team lead, software engineer, database and software architecture designer, customer support"],
-				["Team Size", "2"],
-				["Responsibilities", "Development, database design, architecture design, optimization, and customer support"]
-			],
-			"large": "<p>Case M was a web-based marketing management tool. With the application, large organizations are able to manage, organize and supervise their marketing investments on all organizational levels and business activities. The application uses pdflib to generate PDF reports with graphs.</p>"
-		},
+        {
+            "title":"Case W",
+            "duration":"July 2011 - March 2013",
+            "fields":[
+                ["Environment", "LAMP environment, LDAP"],
+                ["Technologies", "Bash Shell, JavaScript, MySQL, PHP, LDAP, Bootstrap, Yii"],
+                ["Role", "Senior software engineer, database and software architecture designer, core component developer"],
+                ["Team Size", "2"]
+            ],
+            "large":"<p>Case W is a work shift planning and scheduling system with LDAP integration. The application can be used to first plan requirements for staffing in different teams at different times, and those requirements can easily be used to plan each employee's weekly schedules. Employees can also use the application to request vacation, track their vacation day usage, notify the team managers about sick leave, and request to switch shifts with other employees.</p><p>The software scales well from the needs of a small team to the needs of a company with hundreds of employees. The system is also highly customizable and features a custom-built JavaScript application structure and several larger JavaScript-driven UI components used for planning the weekly and daily schedules.</p>"
+        },
 
-
-
-
-		"-",
+        {
+            "title":"Case L",
+            "duration":"July 2012 - October 2012",
+            "fields":[
+                ["Environment", "LAMP environment"],
+                ["Technologies", "JavaScript, MySQL, PHP, Bootstrap, Yii"],
+                ["Role", "Team lead, database and software architecture designer, project manager"],
+                ["Team Size", "2"],
+                ["Responsibilities", "Development, database design, software and server optimization, core components, payment systems, customer contact"]
+            ],
+            "large":"<p>Case L was an online e-commerce site, that was given a full frontend rewrite, while only doing some improvements on the already existing backend software. The frontend was given a much more modern responsive layout, with several interactive JavaScript components, while trying to keep a familiar and comfortable feel to the site for the existing customers.</p><p>An easy to integrate and extensible payment system module was done for the project, so future projects can benefit from it as well.</p>"
+        },
 
 
 
-
-		{
-			"title": "Case S",
-			"duration": "May 2008 - April 2009",
-			"fields": [
-				["Environment", "LAMP"],
-				["Technologies", "JavaScript, MySQL, PHP"],
-				["Role", "Software engineer, architecture designer, customer support"],
-				["Team Size", "4"],
-				["Responsibilities", "Development, database design, architecture design, and optimization"]
-			],
-			"large": "<p>Case S was an online consumer behavior surveying application. It enables creation and fielding of multimedia-enriched surveys. The application is designed to run on all browsers all the way back to IE6. The surveys are completely executed client side, in the browser, to reduce the server load. A communication framework relays the gathered data to the server side IO API.</p>"
-		},
-
-		{
-			"title": "PHP Framework",
-			"duration": "September 2007 - December 2011",
-			"fields": [
-				["Technologies", "PHP"],
-				["Responsibilities", "Architecture design and optimization"]
-			],
-			"large": "<p>PHP Framework was the base used for most of our PHP projects.  This system was been built for performance and rapid application development.</p><p>Eventually the PHP framework was retired and replaced in most projects with the Yii PHP Framework.</p>"
-		},
-
-
-		{
-			"title": "Case E",
-			"duration": "August 2007 - September 2009",
-			"fields": [
-				["Environment", "LAMP"],
-				["Technologies", "JavaScript, MySQL, pdflib, PHP, SOAP"],
-				["Role", "Software engineer, customer support"],
-				["Team Size", "2"],
-				["Responsibilities", "Architecture design and optimization"]
-			],
-			"large": "<p>Case E was a tool for measuring, planning and managing the corporate relationships in companies working in a project-based or business-to-business environment. The software used a wide variety of technologies, for example pdflib to generate extensive PDF reports with graphs, and SOAP to communicate and transmit collected data to Salesforce.</p>"
-		},
+        "-",
 
 
 
-		"-",
+        {
+            "title":"Case D",
+            "duration":"October 2011 - October 2012",
+            "fields":[
+                ["Environment", "LAMP environment"],
+                ["Technologies", "C++, Bash Shell"]
+            ],
+            "large":"<p>Case D was a multi-threaded C++ application created to handle time-critical actions on a high-traffic site that needs to deliver real-time data to all of their clients. The application was built from scratch, fully customized to the needs of the client, with focus on stability, performance, scalability and readability of the code. The application is capable of automatically recovering even from many severe errors without affecting the site, it is easy to debug and profile, and scales easily by sharding and includes a simple high availability implementation.</p><p>Case D was handled as a one-man project, for both customer contact and technical implementation.</p>"
+        },
+
+        {
+            "title":"Case B",
+            "duration":"April 2009 - December 2011",
+            "fields":[
+                ["Environment", "Large LAMP environment, Memcached, MongoDB, Varnish, nginx"],
+                ["Technologies", "Bash Shell, C++, JavaScript, MySQL, PHP"],
+                ["Role", "Team lead, senior software engineer, database and software architecture designer"],
+                ["Team Size", "Has varied between 2 and 9"],
+                ["Responsibilities", "Development, database design, software and server optimization, and security auditing "]
+            ],
+            "large":"<p>Case B was creating a world-wide high profile internet based site, with real-time data and payment system integrations from scratch. The servers, software and database were heavily optimized to serve a large amount of clicks per day, while still keeping the data real-time. Several different payment systems were integrated, and several security systems were created to ensure transaction integrity. The database was also been designed to keep the system robust, while making sure that all data was preserved.</p><p>Case B served up to 800 000 visitors and a few million page views per day.</p>"
+        },
+
+        {
+            "title":"Case M",
+            "duration":"November 2008 - September 2009",
+            "fields":[
+                ["Environment", "Large LAMP environment, Memcached, MongoDB, Varnish, nginx"],
+                ["Technologies", "JavaScript, MySQL, pdflib, PHP"],
+                ["Role", "Team lead, software engineer, database and software architecture designer, customer support"],
+                ["Team Size", "2"],
+                ["Responsibilities", "Development, database design, architecture design, optimization, and customer support"]
+            ],
+            "large":"<p>Case M was a web-based marketing management tool. With the application, large organizations are able to manage, organize and supervise their marketing investments on all organizational levels and business activities. The application uses pdflib to generate PDF reports with graphs.</p>"
+        },
+
+        {
+            "title":"Case S",
+            "duration":"May 2008 - April 2009",
+            "fields":[
+                ["Environment", "LAMP"],
+                ["Technologies", "JavaScript, MySQL, PHP"],
+                ["Role", "Software engineer, architecture designer, customer support"],
+                ["Team Size", "4"],
+                ["Responsibilities", "Development, database design, architecture design, and optimization"]
+            ],
+            "large":"<p>Case S was an online consumer behavior surveying application. It enables creation and fielding of multimedia-enriched surveys. The application is designed to run on all browsers all the way back to IE6. The surveys are completely executed client side, in the browser, to reduce the server load. A communication framework relays the gathered data to the server side IO API.</p>"
+        },
 
 
-		"Noteworthy personal projects",
 
-		{
-			"title": "JSIS",
-			"fields": [
-				["Technologies", "JavaScript, Node.js"],
-				["Project homepage", "<a href=\"http://jsis.name/\">http://jsis.name/</a>"]
-			],
-			"large": "<p>JSIS is short for JavaScript IRC Stats. It is a tool to generate statistics from Internet Relay Chat log files. The tool was built due to frustration with existing tools and to have fun while learning Node.js.</p><p>The tool is well documented, and the code is structured so adding support for more log file formats, new statistical widgets, and themes is easy.</p>"
-		},
+        "-",
 
-		{
-			"title": "Other project links",
-			"fields": [
-				["Code released on homepage", "<a href=\"http://lietu.net/index.php/releases/\">http://lietu.net/index.php/releases</a>"],
-				["GitHub profile", "<a href=\"https://github.com/lietu\">https://github.com/lietu</a>"],
-				["Google Code profile", "<a href=\"http://code.google.com/u/115444436386238448327/\">http://code.google.com/u/115444436386238448327/</a>"],
-				["SourceForge profile", "<a href=\"http://sourceforge.net/users/lietu\">http://sourceforge.net/users/lietu</a>"]
-			]
-		}
-	]
+
+
+
+        {
+            "title":"PHP Framework",
+            "duration":"September 2007 - December 2011",
+            "fields":[
+                ["Technologies", "PHP"],
+                ["Responsibilities", "Architecture design and optimization"]
+            ],
+            "large":"<p>PHP Framework was at one time the base used for most of Nord Software's PHP projects. This system was been built for performance and rapid application development.</p><p>Eventually the PHP framework was retired and replaced in most projects with the Yii PHP Framework.</p>"
+        },
+
+        {
+            "title":"Case E",
+            "duration":"August 2007 - September 2009",
+            "fields":[
+                ["Environment", "LAMP"],
+                ["Technologies", "JavaScript, MySQL, pdflib, PHP, SOAP"],
+                ["Role", "Software engineer, customer support"],
+                ["Team Size", "2"],
+                ["Responsibilities", "Architecture design and optimization"]
+            ],
+            "large":"<p>Case E was a tool for measuring, planning and managing the corporate relationships in companies working in a project-based or business-to-business environment. The software used a wide variety of technologies, for example pdflib to generate extensive PDF reports with graphs, and SOAP to communicate and transmit collected data to Salesforce.</p>"
+        },
+
+        "Noteworthy personal projects",
+
+        {
+            "title":"JSIS",
+            "fields":[
+                ["Technologies", "JavaScript, Node.js"],
+                ["Project homepage", "<a href=\"http://jsis.name/\">http://jsis.name/</a>"]
+            ],
+            "large":"<p>JSIS is short for JavaScript IRC Stats. It is a tool to generate statistics from Internet Relay Chat log files. The tool was built due to frustration with existing tools and to have fun while learning Node.js.</p><p>The tool is well documented, and the code is structured so adding support for more log file formats, new statistical widgets, and themes is easy.</p>"
+        },
+
+        {
+            "title":"Other project links",
+            "fields":[
+                ["Code released on homepage", "<a href=\"http://lietu.net/index.php/releases/\">http://lietu.net/index.php/releases</a>"],
+                ["GitHub repositories", "<a href=\"https://github.com/lietu?tab=repositories\">https://github.com/lietu</a>"],
+                ["Google Code profile", "<a href=\"http://code.google.com/u/115444436386238448327/\">http://code.google.com/u/115444436386238448327/</a>"],
+                ["SourceForge profile", "<a href=\"http://sourceforge.net/users/lietu\">http://sourceforge.net/users/lietu</a>"]
+            ]
+        }
+    ]
 
 }

@@ -1,74 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	{% block head %}
+    {% block head %}
     <title>Curriculum Vitae - {{ name }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet/less" type="text/css" href="style.less">
-    <script type="text/javascript" src="less-1.3.1.min.js"></script>
-	{% endblock head %}
+    <link rel="stylesheet"
+          href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento'
+          rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script type="text/javascript" src="less-1.4.1.min.js"></script>
+
+    {% endblock head %}
 </head>
 <body>
 
-	{% block header %}
-	<header>
-		<h1>Curriculum Vitae - {{ name }}</h1>
-		<address>{{ contact }}</address>
-	</header>
-	{% endblock header %}
 
-	{% for item in sections %}
+<div class="pure-g-r" id="layout">
+    <div class="sidebar pure-u">
+        <header class="header">
+            <hgroup>
+                {% block header %}
+                <h1 class="brand-title">{{ name }}</h1>
 
-		{% if item.type == "page-break" %}
-			<div class="break"></div>
-		{% endif %}
-		{% if item.type == "heading" %}
-		<h2>{{ item.title }}</h2>
-		{% endif %}
-		{% if item.type == "normal" %}
-			<section>
-				<table>
-					<thead>
-						<tr>
-							<th class="title">
-								<h3>{{ item.title }}</h3>
-								{% if "duration" in item %}
-									<p class="duration">{{ item.duration }}</p>
-								{% endif %}
-							</th>
-							<th>&nbsp;</th>
-						</tr>
-					</thead>
-					<tbody>
-						{% if "fields" in item %}
-							{% for field in item["fields"] %}
-								<tr>
-									<td class="label">{{ field.label }}</td>
-									<td class="value">{{ field.value }}</td>
-								</tr>
-							{% endfor %}
-						{% endif %}
+                <h2 class="brand-tagline">Curriculum Vitae</h2>
 
-						{% if "large" in item %}
-							<tr>
-								<td colspan="2" class="large">
-									{{ item.large }}
-								</td>
-							</tr>
-						{% endif %}
-					</tbody>
-				</table>
-			</section>
-		{% endif %}
-	{% endfor %}
+                <p class="contact">{{ contact }}</p>
+                {% endblock header %}
+            </hgroup>
 
-	{% block footer %}
-	<footer>
-		<p>Copyright &copy; 2012 - {{ name }}</p>
-		<p>Generated with <a href="https://github.com/lietu/pyhtmlcv" title="PyHtmlCv by Janne Enberg aka. Lietu">PyHtmlCv</a></p>
-		<p>Updated {{ now }}</p>
-	</footer>
-	{% endblock footer %}
+            <nav class="nav">
+                {% block navigation %}
+                {% for heading in navigation.headings %}
+                <ul class="nav-list">
+                    {% for section in navigation[heading] %}
+                    <li>
+                        <a href="#{{ section.id }}">
+                            {{ section.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+                {% endblock navigation %}
+            </nav>
+        </header>
+    </div>
+
+    <div class="pure-u-1">
+        <div class="content">
+
+            {% for item in sections %}
+
+            {% if item.type == "page-break" %}
+            <div class="break"></div>
+            {% endif %}
+
+            {% if item.type == "heading" %}
+            <h1 class="content-subhead" id="{{ item.id }}">{{ item.title
+                }}</h1>
+            {% endif %}
+
+            {% if item.type == "normal" %}
+            <div class="sections" id="{{ item.id }}">
+                <section class="section">
+                    <header class="section-header">
+                        <h2 class="section-title">{{ item.title }}</h2>
+                        <!--
+                        <p class=" post-meta">
+                        By <a href="#" class="post-author">Tilo Mitra</a>
+                        under <a class="post-category post-category-design"
+                                 href="#">CSS</a> <a
+                            class="post-category post-category-pure"
+                            href="#">Pure</a>
+                        </p>
+                        -->
+                    </header>
+
+                    <div class="section-description">
+                        {% if "fields" in item %}
+                        {% for field in item["fields"] %}
+                        <div class="pure-g-r fields">
+                            <div class="pure-u-1-3 label">
+                                {{ field.label }}
+                            </div>
+                            <div class="pure-u-2-3 value">
+                                {{ field.value }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+
+                        {% if "large" in item %}
+                        {{ item.large }}
+                        {% endif %}
+                    </div>
+                </section>
+            </div>
+            {% endif %}
+
+            {% endfor %}
+
+
+            <footer class="footer">
+                {% block footer %}
+                <ul>
+                    <li>
+                        Generated with
+                        <a href="https://github.com/lietu/pyhtmlcv"
+                           title="PyHtmlCv by Janne Enberg aka. Lietu">
+                            PyHtmlCv
+                        </a>
+                        and using
+                        <a href="http://purecss.io/">
+                            Pure
+                        </a>
+                    </li>
+                    <li>Updated {{ now }}</li>
+                    <li>Copyright &copy; 2013 - {{ year }} {{ name }}</li>
+                </ul>
+                {% endblock footer %}
+            </footer>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
