@@ -1,3 +1,4 @@
+@import 'pure.less';
 @import 'variables.less';
 
 * {
@@ -159,8 +160,11 @@ a {
         }
 
         .header {
-            margin: 50% 2em 0;
+            margin: 1em 2em 0;
             text-align: right;
+            h1 {
+                margin-top: 1.5em;
+            }
         }
     }
 }
@@ -255,6 +259,12 @@ a {
         width: 100%;
         position: relative;
         margin: 0;
+
+        img {
+            float: right;
+            height: 128px;
+            width: 128px;
+        }
 
         .header {
             text-align: center;

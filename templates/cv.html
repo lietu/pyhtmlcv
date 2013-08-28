@@ -6,9 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet"
-          href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
-
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700'
           rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quattrocento'
@@ -16,6 +13,29 @@
 
     <link rel="stylesheet/less" type="text/css" href="style.less">
     <script type="text/javascript" src="less-1.4.1.min.js"></script>
+
+    <!--
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-27007508-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type =
+                    'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+                    'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    -->
 
     {% endblock head %}
 </head>
@@ -25,6 +45,7 @@
 <div class="pure-g-r" id="layout">
     <div class="sidebar pure-u">
         <header class="header">
+            <img src="cv_image.jpg" title="Picture of {{ name }}" />
             <hgroup>
                 {% block header %}
                 <h1 class="brand-title">{{ name }}</h1>
