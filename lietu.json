@@ -11,14 +11,14 @@
                 ["Name", "Janne Enberg"],
                 ["Date of Birth", "31<sup>st</sup> of January, 1985"],
                 ["Languages", "Finnish (mother tongue), English (fluent in conversation and writing, including IT terminology)"],
-                ["Hobbies", "Hydroponics, cosmology, theoretical physics, Arduinos, network security, operating systems, hardware diagnostics, server administration and programming"]
+                ["Hobbies", "Hydroponics, photography, cosmology, theoretical physics, Arduinos, network security, operating systems, hardware diagnostics, server administration and programming"]
             ]
         },
 
         {
             "title":"Summary",
             "largeList":[
-                "Autodidact with experience of working in all fields of software development, including design, development, optimization, debugging, documentation, testing, maintenance, and customer support.",
+                "Self-taught IT professional with experience of working in all fields of software development, including design, development, optimization, debugging, documentation, testing, maintenance, and customer support.",
                 "Long history in *nix server set up and administration for various purposes.",
                 "Reliable professional, open for innovation, able to handle stressful projects with deadlines and ad-hoc situations.",
                 "Started doing everything related to computers at a young age, having used 20+ programming/scripting languages and 10+ operating systems, NOT including all variants and different distributions."
@@ -31,16 +31,8 @@
                 "Work experience mainly in LAMP technologies (Linux, Apache, MySQL, and PHP) on CentOS and Ubuntu servers.",
                 "Solid knowledge in database structure design gained through experience in making database intensive software and lectures by MySQL consultants. Debugging performance issues, optimization through means such as proper use of indexes and using temporary tables, keeping of historical data for logging purposes, and tuning MySQL configuration.",
                 "Great experience in optimization of web-based software used world-wide, with up to 800 000 visits per day. This includes use of caching technologies (such as Memcached), caching servers (Varnish), and optimizations of multiple different layers.",
-                "Experienced in agile software development methodologies, including Scrum."
-            ]
-        },
-
-        {
-            "title":"Areas of specialization",
-            "largeList":[
-                "Worked for Oy Nord Software Ltd. as a software engineer from August 2007 until February 2009, and as a senior software engineer since March 2009 until March 2013.",
-                "Responsibilities also included most server administration tasks for the company's and clients' servers, including configuration choosing for most projects' servers.",
-                "Since March 2013 working for Kiosked Oy Ab as a senior software engineer."
+                "Experienced in agile software development methodologies, including Scrum.",
+                "Also experienced in server administration tasks, including debugging performance and configuration issues."
             ]
         },
 
@@ -57,11 +49,39 @@
 
 
 
+
+
+
+
         "-",
+
+
+        "Employment History",
+
+        {
+            "title": "Kiosked (Senior Software Engineer)",
+            "duration": "March 2013 - November 2013",
+            "large": "<p>At Kiosked I worked on a wide variety of things, some of them being:</p><ul><li>The functionalities responsible for importing millions of products and then choosing the best matches to show for end users.</li><li>Implementing many improvements to the core systems and important tools for developers.</li><li>Profiling and optimizing the application core and servers, including implementation of custom tools for profiling and debugging.</li><li>Actively introducing new technologies to the system and developers.</li></ul><p>I also was a part of the 24/7 on call team making sure the systems were up and running always.</p>"
+        },
+
+        {
+            "title": "Nord Software (Senior Software Engineer)",
+            "duration": "March 2009 - March 2013",
+            "large": "<p>In addition to the previous responsibilities as a software engineer, I was given responsibility of leading or supervising several development teams. I also participated in regular discussions about how to improve things in the company, ranging from employee happiness in general, to taking new technologies in use.</p><p>I have participated in some way in most projects at Nord Software, sometimes just for quick technical consultancy in design or to resolve issues, sometimes I was a one-man project team.</p><p>I was also elected to be the occupational safety manager, and have taken care of some common tasks around the office, such as making sure more sodas are ordered in time to keep the programmers well hydrated.</p>"
+        },
+
+        {
+            "title": "Nord Software (Software Engineer)",
+            "duration": "August 2007 - March 2009",
+            "large": "<p>I have had a wide array of responsibilities at Nord Software. These have included integrating secure communications to payment gateways, profiling and optimizing lots of software projects, choosing the appropriate hardware and software stacks, software and database architecture design, customer contact and project planning.</p><p>Server configuration choosing as well as communicating with the hosting partners to pick the various software stacks has also been one of the tasks most commonly assigned to me.</p><p>Some keywords: Web application development, database design, MySQL query & server optimization, LAMP stack optimization, software optimization, server administration, PHP, JavaScript, C++, HTML, CSS, Linux, Apache, MySQL, Nginx, Varnish, Memcache, etc.</p>"
+        },
+
+
 
 
 
         "Project Portfolio",
+
 
         {
             "title":"Case DI",
@@ -74,6 +94,16 @@
             ],
             "large":"<p>Case DI is an employee portal for highly qualified professionals. The portal included SOAP integration with an application for keeping information of available jobs and applying for them, as well as creating a SOAP authentication API for communication with another application.</p>"
         },
+
+
+
+
+
+
+
+
+
+        "-",
 
         {
             "title":"Case W",
@@ -102,10 +132,6 @@
 
 
 
-        "-",
-
-
-
         {
             "title":"Case D",
             "duration":"October 2011 - October 2012",
@@ -128,6 +154,16 @@
             ],
             "large":"<p>Case B was creating a world-wide high profile internet based site, with real-time data and payment system integrations from scratch. The servers, software and database were heavily optimized to serve a large amount of clicks per day, while still keeping the data real-time. Several different payment systems were integrated, and several security systems were created to ensure transaction integrity. The database was also been designed to keep the system robust, while making sure that all data was preserved.</p><p>Case B served up to 800 000 visitors and a few million page views per day.</p>"
         },
+
+
+
+
+
+
+
+
+
+        "-",
 
         {
             "title":"Case M",
@@ -157,10 +193,6 @@
 
 
 
-        "-",
-
-
-
 
         {
             "title":"PHP Framework",
@@ -184,6 +216,15 @@
             ],
             "large":"<p>Case E was a tool for measuring, planning and managing the corporate relationships in companies working in a project-based or business-to-business environment. The software used a wide variety of technologies, for example pdflib to generate extensive PDF reports with graphs, and SOAP to communicate and transmit collected data to Salesforce.</p>"
         },
+
+
+
+
+
+
+
+
+        "-",
 
         "Noteworthy personal projects",
 
