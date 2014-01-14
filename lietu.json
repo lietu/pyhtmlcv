@@ -59,6 +59,12 @@
         "Employment History",
 
         {
+            "title": "Pryte (DevOps Lead)",
+            "duration": "Started November 2013 (Current)",
+            "large": "<p>Currently working here.</p>"
+        },
+
+        {
             "title": "Kiosked (Senior Software Engineer)",
             "duration": "March 2013 - November 2013",
             "large": "<p>At Kiosked I worked on a wide variety of things, some of them being:</p><ul><li>The functionalities responsible for importing millions of products and then choosing the best matches to show for end users.</li><li>Implementing many improvements to the core systems and important tools for developers.</li><li>Profiling and optimizing the application core and servers, including implementation of custom tools for profiling and debugging.</li><li>Actively introducing new technologies to the system and developers.</li></ul><p>I also was a part of the 24/7 on call team making sure the systems were up and running always.</p>"
