@@ -45,7 +45,7 @@
                 ["Programming languages", "Python, Bash Shell, JavaScript (async + OOP, Node.js), PHP (OOP), C++ (OOP), Lua and more"],
                 ["Other languages", "HTML, CSS, LESS, SQL"],
                 ["Operating systems", "Linux (CentOS, Debian/Ubuntu, many more), FreeBSD, OpenBSD, Windows (not for server use)"],
-                ["DevOps tools", "Jenkins, Vagrant, Chef, SaltStack, VMware (incl. ESXi), VirtualBox, Fabric, and of course custom tools"],
+                ["DevOps tools", "Jenkins, Travis CI, Vagrant, Chef, SaltStack, VMware (incl. ESXi), VirtualBox, Fabric, and of course custom tools"],
                 ["Hardware", "System assembly, troubleshooting, configuration choosing"],
                 ["Data", "MySQL, MongoDB, Cassandra, Redis, Riak, memcache, Sphinx, SOLR"],
                 ["Security", "nmap, Nessus, AIDE, rkhunter, chkrootkit, snort, iptables, pf"],
