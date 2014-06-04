@@ -49,7 +49,7 @@
                 ["Hardware", "System assembly, troubleshooting, configuration choosing"],
                 ["Data", "MySQL, MongoDB, Cassandra, Redis, Riak, memcache, Sphinx, SOLR"],
                 ["Security", "nmap, Nessus, AIDE, rkhunter, chkrootkit, snort, iptables, pf"],
-                ["Networking", "IPSec (racoon, openswan), OpenVPN, tcpdump, Wireshark, TCP tuning"]
+                ["Networking", "IPSec (racoon, openswan), OpenVPN, tcpdump, Wireshark, TCP tuning"],
                 ["Other", "Amazon Web Services (EC2, VPC, RDS, S3, Route 53, SES, ...), Nginx, Apache, varnish, Zabbix, Splunk, Git, Mercurial, SVN"]
             ]
         },
