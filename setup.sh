@@ -9,5 +9,5 @@ if [ ! -d "$VIRTUALENV" ]; then
     virtualenv .venv
 fi
 
-source ".venv/bin/activate"
+. ".venv/bin/activate"
 pip install requirements.txt

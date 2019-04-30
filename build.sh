@@ -2,7 +2,7 @@
 set -exu
 
 if [ -d "$VIRTUALENV" ]; then
-    source ".venv/bin/activate"
+    . ".venv/bin/activate"
 fi
 
 PYTHON=$(which python)
