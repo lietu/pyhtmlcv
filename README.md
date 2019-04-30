@@ -1,4 +1,4 @@
-# pyhtmlcv
+# pyhtmlcv ![Build Status](https://travis-ci.org/lietu/pyhtmlcv.svg?branch=master)
 
 Generate HTML CVs from simple (enough) configuration files.
 
