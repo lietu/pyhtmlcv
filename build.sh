@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 set -exu
 
-if [ "${VIRTUAL_ENV:-}" != "" ]; then
+if [ "${VIRTUAL_ENV:-}" == "" ]; then
+    SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
     VIRTUALENV="$SCRIPTPATH/.venv"
     if [ -d "$VIRTUALENV" ]; then
         . ".venv/bin/activate"
