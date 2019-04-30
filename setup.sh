@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -exu
 
-if [ "${VIRTUAL_ENV:-}" -eq "" ]; then
+if [ -z "${VIRTUAL_ENV:-}" ]; then
     SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
     VIRTUALENV="$SCRIPTPATH/.venv"
 
