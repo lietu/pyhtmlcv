@@ -1,14 +1,16 @@
 #!/usr/bin/env sh
 set -exu
 
-SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
-VIRTUALENV="$SCRIPTPATH/.venv"
+if [ "${VIRTUAL_ENV:-}" != "" ]; then
+    SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+    VIRTUALENV="$SCRIPTPATH/.venv"
 
-if [ ! -d "$VIRTUALENV" ]; then
-    pip install virtualenv
-    virtualenv .venv
+    if [ ! -d "$VIRTUALENV" ]; then
+        pip install virtualenv
+        virtualenv .venv
+    fi
+
+    . ".venv/bin/activate"
 fi
-
-. ".venv/bin/activate"
 
 pip install --user -r requirements.txt
