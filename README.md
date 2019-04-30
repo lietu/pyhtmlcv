@@ -35,7 +35,7 @@ For most common usage you will likely want to run:
 pip install virtualenv
 virtualenv .venv
 pip install -r requirements.txt
-python python pyhtmlcv.py --watch
+python pyhtmlcv.py --watch
 ```
 
 This will install the dependencies in a Python virtualenv and start the
