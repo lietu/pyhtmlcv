@@ -55,6 +55,8 @@ This is however NOT necessary if you use Travis-CI as per suggested use.
  - Go generate a color scheme that suits your needs at
    http://colorschemedesigner.com/ and update
    `templates/default/variables.scss` (or create a whole new template)
+ - You might want your face on your CV instead of mine, updating
+   `templates/default/cv_image.jpg` is the easiest way to do that.
  - Confirm that the result is good. Pasting certain special characters
    from Word, for example, can cause issues in the output.
  - Enable [Travis-CI](https://travis-ci.org) for your repository
