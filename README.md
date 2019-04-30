@@ -59,3 +59,5 @@ This is however NOT necessary if you use Travis-CI as per suggested use.
    from Word, for example, can cause issues in the output.
  - Enable [Travis-CI](https://travis-ci.org) for your repository
  - Configure `$GITHUB_TOKEN` for [GitHub pages deployment](https://docs.travis-ci.com/user/deployment/pages/)
+ - Check out your cool new CV at your repo's GitHub Pages URL, e.g.
+   [https://lietu.github.io/pyhtmlcv/](https://lietu.github.io/pyhtmlcv/)
