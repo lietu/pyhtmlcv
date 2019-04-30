@@ -1,0 +1,26 @@
+language: python
+python:
+- "2.6"
+- "2.7"
+- "3.3"
+- "3.4"
+- "3.5"
+- "3.5-dev"  # 3.5 development branch
+- "3.6"
+- "3.6-dev"  # 3.6 development branch
+
+before_install: chmod +x *.sh
+install: ./setup.sh
+script: ./build.sh
+
+# Deploy to GitHub pages
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: generated/cv.json/
+  github-token: $GITHUB_TOKEN
+  target-branch: gh-pages
+  repo: lietu/pyhtmlcv
+  on:
+    branch: master
+    python: 3.6

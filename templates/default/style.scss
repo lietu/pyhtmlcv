@@ -1,0 +1,311 @@
+@import 'purecss';
+@import 'variables';
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+.header {
+
+  .contact {
+    a {
+      display: block;
+      margin: 3px 0;
+      font-size: 80%;
+    }
+  }
+}
+
+.brand-title,
+.brand-tagline {
+  margin: 0;
+}
+
+.brand-title {
+  text-transform: uppercase;
+}
+
+.brand-tagline {
+  font-weight: 300;
+  color: $sidebarTitle;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 2px 0;
+
+    &:first-child {
+      font-size: 120%;
+      margin: 30px 0 10px 0;
+
+      a {
+        color: $sidebarTitleLink;
+        &:hover, &:focus {
+          color: $sidebarTitleLinkHover;
+        }
+      }
+
+    }
+
+    zoom: 1;
+  }
+
+}
+
+.content-subhead {
+  text-transform: uppercase;
+  color: $contentSeparatorTitle;
+  border-bottom: 1px solid $contentSeparator;
+  padding: 0.4em 0;
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.content {
+  padding: 2em 3em 0;
+  background: $contentBackground;
+}
+
+.section {
+  padding-bottom: 0.5em;
+
+  .section-title {
+    font-size: 1.5em;
+    color: #222;
+    margin-bottom: 0.2em;
+  }
+
+  .section-description {
+    font-family: $sectionFont;
+    color: #444;
+    line-height: 1.8em;
+  }
+
+  .section-duration {
+    margin: 0 0 1em 0;
+    color: #5a5a5a;
+    font-size: 0.95em;
+  }
+
+  li {
+    list-style: square;
+    margin-bottom: 5px;
+  }
+
+  .fields {
+    border-bottom: 1px solid $fieldSeparator;
+    padding: 2px 0;
+    .label {
+      font-weight: bold;
+      color: #222;
+    }
+    .value {
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3em;
+  padding: 1em 0 1em 0;
+  font-size: 80%;
+  border-top: 1px solid $contentSeparator;
+
+  li {
+    list-style: none;
+  }
+
+}
+
+@media screen {
+
+  #layout {
+    padding-left: 25%; /* "left col (nav + list)" width */
+    position: relative;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    margin-left: -25%;
+    overflow-y: auto;
+    background: $sidebarBackground;
+    color: $sidebarText;
+
+    a {
+      background: transparent;
+      color: $sidebarLink;
+      margin-top: 1em;
+
+      &:hover, &:focus {
+        color: $sidebarLinkHover;
+        text-decoration: none;
+      }
+    }
+
+    .header {
+      margin: 1em 2em 0;
+      text-align: right;
+      h1 {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 0.85em;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin: 0;
+
+    .header {
+      text-align: center;
+      top: auto;
+      margin: 3em auto;
+      position: static;
+    }
+  }
+
+  #layout {
+    padding: 0;
+  }
+
+  .content-subhead {
+    font-size: 1.4em;
+  }
+
+  .section {
+    padding: 0;
+    h2.section-title {
+      font-size: 1.2em;
+    }
+  }
+
+  .fields {
+    .label, .value {
+      display: inline;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 2em 1em 0;
+  }
+}
+
+@media print {
+
+  * {
+    background: #fff;
+  }
+
+  body {
+    font-size: 0.6em;
+  }
+
+  .pure-g-r, .pure-g, .pure-u, .pure-u-1 {
+    display: block;
+  }
+
+  h1, h2 {
+    page-break-before: auto;
+    page-break-after: avoid;
+  }
+
+  .sidebar, .sections {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  .section {
+    ul {
+      line-height: 1.4em;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    .fields {
+      .label, .value {
+        display: inline;
+      }
+    }
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin: 0;
+
+    img {
+      float: right;
+      height: 128px;
+      width: 128px;
+    }
+
+    .header {
+      text-align: center;
+      top: auto;
+      padding: 1em 1em 0 1em;
+      position: static;
+
+      a {
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .content {
+    padding: 1em;
+    background: #fff;
+  }
+
+  .nav, .footer {
+    display: none;
+  }
+
+  .break {
+    page-break-before: always;
+  }
+
+  // Show URLs after links
+  .content {
+    a {
+      color: #222;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+      color: $linkColor;
+    }
+  }
+}

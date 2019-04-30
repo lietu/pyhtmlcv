@@ -1,0 +1,23 @@
+// Main content area
+$contentBackground: #f5f5f5;
+$linkColor: #7C91FF;
+
+$font: 'Roboto', Verdana, "DejaVu Sans", sans-serif;
+$sectionFont: 'Quattrocento', Georgia, "Cambria", serif;
+
+$contentSeparator: #c5c5c5;
+$contentSeparatorTitle: darken($contentSeparator, 15%);
+
+$fieldSeparator: lighten($contentSeparator, 10%);
+
+// Sidebar
+$sidebarText: #f5f5f5;
+
+$sidebarTitleLink: #8E9FD6;
+$sidebarTitleLinkHover: darken($sidebarTitleLink, 15%);
+
+$sidebarLink: lighten($sidebarTitleLink, 22%);
+$sidebarLinkHover: darken($sidebarLink, 15%);
+
+$sidebarTitle: darken($sidebarTitleLinkHover, 5%);
+$sidebarBackground: darken($sidebarTitleLink, 53%);

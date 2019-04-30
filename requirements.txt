@@ -1,0 +1,4 @@
+Jinja2==2.10.1
+libsass==0.18.0
+pathlib2==2.3.3
+six==1.12.0
