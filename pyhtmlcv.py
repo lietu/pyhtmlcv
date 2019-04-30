@@ -117,7 +117,8 @@ def generate_cv(destination, template, config):
             entry_str = str(entry)
             compiled = sass.compile(filename=entry_str)
             entry_css = Path(entry_str[:-5] + ".css")
-            entry_css.write_text(compiled)
+            with entry_css.open("w", encoding="utf-8") as f:
+                f.write(compiled)
             print("Compiled {} to {}".format(entry, entry_css))
 
     # Delete unnecessary files after compilation
@@ -137,7 +138,8 @@ def generate_cv(destination, template, config):
 
     # Write the result HTML
     full_path = Path(destination) / "index.html"
-    full_path.write_text(html, encoding="utf-8")
+    with full_path.open("w", encoding="utf-8") as f:
+        f.write(html)
 
     print("Generated CV HTML to {}".format(full_path))
 
