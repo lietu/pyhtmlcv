@@ -1,4 +1,7 @@
-# pyhtmlcv ![Build Status](https://travis-ci.org/lietu/pyhtmlcv.svg?branch=master)
+![Build Status](https://travis-ci.org/lietu/pyhtmlcv.svg?branch=master)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# pyhtmlcv
 
 Generate HTML CVs from simple (enough) configuration files.
 
@@ -70,3 +73,8 @@ This is however NOT necessary if you use Travis-CI as per suggested use.
  - Configure `$GITHUB_TOKEN` for [GitHub pages deployment](https://docs.travis-ci.com/user/deployment/pages/)
  - Check out your cool new CV at your repo's GitHub Pages URL, e.g.
    [https://lietu.github.io/pyhtmlcv/](https://lietu.github.io/pyhtmlcv/)
+
+
+## License
+
+[BSD 3-clause](./LICENSE.md).
