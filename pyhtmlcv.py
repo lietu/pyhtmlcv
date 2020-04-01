@@ -26,7 +26,7 @@ import shutil
 import sys
 from time import sleep
 
-TEMPLATE_PATH = Path('templates')
+TEMPLATE_PATH = Path("templates")
 
 
 def str2bool(value):
@@ -35,12 +35,12 @@ def str2bool(value):
     :param str value: 
     :return bool:
     """
-    if value.lower() in ('yes', 'true', 't', 'y', '1'):
+    if value.lower() in ("yes", "true", "t", "y", "1"):
         return True
-    elif value.lower() in ('no', 'false', 'f', 'n', '0'):
+    elif value.lower() in ("no", "false", "f", "n", "0"):
         return False
     else:
-        raise ArgumentTypeError('Boolean value expected.')
+        raise ArgumentTypeError("Boolean value expected.")
 
 
 def get_last_change(path):
@@ -84,7 +84,7 @@ def generate_cv(destination, template, config):
     # Get the template
     template_path = str(TEMPLATE_PATH / template)
     env = Environment(loader=FileSystemLoader(template_path))
-    template = env.get_template('index.html')
+    template = env.get_template("index.html")
 
     # Generate a few variables for the template
     now = datetime.now()
@@ -99,7 +99,7 @@ def generate_cv(destination, template, config):
         sections=config["sections"],
         navigation=navigation,
         now=current_time,
-        year=year
+        year=year,
     )
 
     # Make sure that the destination path is deleted first
@@ -148,18 +148,18 @@ def validate_config(config):
     error = False
 
     if "name" not in config:
-        print('Missing name definition, e.g. { "name": "Janne Enberg", '
-              '... }')
+        print('Missing name definition, e.g. { "name": "Janne Enberg", ' "... }")
         error = True
 
     if "contact" not in config:
-        print('Missing contact definition, e.g. { ..., '
-              '"contact": "+1 (2) 345 678 | contact@example.com", ... }')
+        print(
+            "Missing contact definition, e.g. { ..., "
+            '"contact": "+1 (2) 345 678 | contact@example.com", ... }'
+        )
         error = True
 
     if "sections" not in config:
-        print('Missing sections definition, e.g. { ..., '
-              '"sections": [ ... ] }')
+        print("Missing sections definition, e.g. { ..., " '"sections": [ ... ] }')
         error = True
     else:
         for section in config["sections"]:
@@ -168,27 +168,36 @@ def validate_config(config):
                 continue
 
             if "title" not in section:
-                print('Missing title from section definition, , '
-                      'e.g. { ..., "sections": [ {"title": "Section '
-                      'title", ...} ] }')
+                print(
+                    "Missing title from section definition, , "
+                    'e.g. { ..., "sections": [ {"title": "Section '
+                    'title", ...} ] }'
+                )
                 print("Found: {}".format(section))
                 error = True
 
-            if "fields" not in section and "large" not in section and \
-                    "largeList" not in section:
-                print('No fields, largeList or large definition for '
-                      'section, , '
-                      'e.g. { ..., "sections": [ {..., '
-                      '"large": "Yadi yadi yada", ...} ] }')
+            if (
+                "fields" not in section
+                and "large" not in section
+                and "largeList" not in section
+            ):
+                print(
+                    "No fields, largeList or large definition for "
+                    "section, , "
+                    'e.g. { ..., "sections": [ {..., '
+                    '"large": "Yadi yadi yada", ...} ] }'
+                )
                 error = True
 
             if "fields" in section:
                 for field in section["fields"]:
                     if not isinstance(field, list) or len(field) != 2:
-                        print('Invalid field definition, '
-                              'it should have two items, e.g. { ..., '
-                              '"sections": [ {..., "fields": [ ["Label",'
-                              ' "Value"], ... }, ... ] }')
+                        print(
+                            "Invalid field definition, "
+                            "it should have two items, e.g. { ..., "
+                            '"sections": [ {..., "fields": [ ["Label",'
+                            ' "Value"], ... }, ... ] }'
+                        )
                         error = True
 
     if error:
@@ -207,15 +216,10 @@ def process_config(config):
         # String sections will be converted to type = heading
         if isinstance(section, six.string_types):
             if section == "-":
-                config["sections"][index] = {
-                    "type": "page-break"
-                }
+                config["sections"][index] = {"type": "page-break"}
 
             else:
-                config["sections"][index] = {
-                    "type": "heading",
-                    "title": section
-                }
+                config["sections"][index] = {"type": "heading", "title": section}
 
             continue
 
@@ -228,33 +232,28 @@ def process_config(config):
             fields = []
 
             for fieldColumns in section["fields"]:
-                fields.append({"label": fieldColumns[0],
-                               "value": fieldColumns[1]})
+                fields.append({"label": fieldColumns[0], "value": fieldColumns[1]})
 
             section["fields"] = fields
 
         # Convert arrays in "largeList" field to <ul> -lists in "large"
         if "largeList" in section:
-            section["large"] = "<ul><li>" + "</li><li>".join(
-                section["largeList"]) + "</li></ul>"
+            section["large"] = (
+                "<ul><li>" + "</li><li>".join(section["largeList"]) + "</li></ul>"
+            )
 
             del section["largeList"]
 
     heading = config["mainHeading"]
 
-    main_heading = {
-        "type": "heading",
-        "title": heading
-    }
+    main_heading = {"type": "heading", "title": heading}
 
     config["sections"] = [main_heading] + config["sections"]
 
 
 def generate_navigation(config):
     i = 1
-    nav = {
-        "headings": []
-    }
+    nav = {"headings": []}
 
     for _, section in enumerate(config["sections"]):
         # Page breaks don't need navigation
@@ -265,9 +264,7 @@ def generate_navigation(config):
         section["id"] = make_id(name, i)
 
         if section["type"] == "heading":
-            nav[name] = [
-                section
-            ]
+            nav[name] = [section]
 
             nav["headings"].append(name)
 
@@ -293,14 +290,24 @@ def make_id(text, index):
 
 def main():
     ap = ArgumentParser()
-    ap.add_argument("--source", default="cv.json", type=str,
-                    help="CV JSON source")
-    ap.add_argument("--target", type=str,
-                    help="Target directory, defaults to generated/<source>/")
-    ap.add_argument("--template", type=str, default="default",
-                    help="One of the subfolders of templates/")
-    ap.add_argument("--watch", type=str2bool, nargs="?", const=True,
-                    default=False, help="Keep watching for changes")
+    ap.add_argument("--source", default="cv.json", type=str, help="CV JSON source")
+    ap.add_argument(
+        "--target", type=str, help="Target directory, defaults to generated/<source>/"
+    )
+    ap.add_argument(
+        "--template",
+        type=str,
+        default="default",
+        help="One of the subfolders of templates/",
+    )
+    ap.add_argument(
+        "--watch",
+        type=str2bool,
+        nargs="?",
+        const=True,
+        default=False,
+        help="Keep watching for changes",
+    )
 
     options = ap.parse_args()
     if not options.target:
