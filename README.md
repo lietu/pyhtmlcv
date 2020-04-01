@@ -27,9 +27,16 @@ The configuration format is not exactly self-explanatory however:
 
 ## Running
 
-Running this tool requires [Python](https://www.python.org/downloads/).
+Running this tool requires [Python](https://www.python.org/downloads/). Using [Poetry](https://python-poetry.org/docs/#installation) is recommended.
 
 For most common usage you will likely want to run:
+
+```bash
+poetry install
+poetry run python pyhtmlcv.py --watch
+```
+
+Or without Poetry installed:
 
 ```bash
 pip install virtualenv

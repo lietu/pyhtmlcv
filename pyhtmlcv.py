@@ -32,7 +32,7 @@ TEMPLATE_PATH = Path("templates")
 def str2bool(value):
     """
     Convert CLI args to boolean
-    :param str value: 
+    :param str value:
     :return bool:
     """
     if value.lower() in ("yes", "true", "t", "y", "1"):

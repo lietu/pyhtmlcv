@@ -4,13 +4,17 @@ python:
 - "3.3"
 - "3.4"
 - "3.5"
-- "3.5-dev"  # 3.5 development branch
 - "3.6"
-- "3.6-dev"  # 3.6 development branch
+- "3.7"
+- "3.8"
 
-before_install: chmod +x *.sh
-install: ./setup.sh
-script: ./build.sh
+install:
+ - pip install --upgrade pip
+ - pip install poetry
+ - poetry install
+
+script:
+ - poetry run python pyhtmlcv.py
 
 # Deploy to GitHub pages
 deploy:
