@@ -1,6 +1,5 @@
 language: python
 python:
-- "2.7"
 - "3.4"
 - "3.5"
 - "3.6"
@@ -25,4 +24,4 @@ deploy:
   repo: lietu/pyhtmlcv
   on:
     branch: master
-    python: 3.6
+    python: 3.8

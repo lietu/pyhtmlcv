@@ -6,7 +6,7 @@ authors = ["Janne Enberg <janne.enberg@lietu.net>"]
 license = "BSD-3-clause"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.4"
 Jinja2 = "2.10.1"
 libsass = "0.18.0"
 pathlib2 = "2.3.3"
